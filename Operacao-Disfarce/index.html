@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação Disfarce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <h1>Operação Disfarce</h1>
+            <p>Uma pequena aventura está começando...</p>
+        </header>
+
+        <section class="game-screen">
+            <canvas id="gameCanvas" width="480" height="320"></canvas>
+        </section>
+
+        <section class="controls">
+            <button data-direction="up">▲</button>
+
+        <div class="horizontal-controls">
+            <button data-direction="left">◀</button>
+            <button data-direction="down">▼</button>
+            <button data-direction="right">▶</button>
+        </div>
+        </section>
+
+        <section class="action-controls">
+            <button id="interactButton"> E __ Interagir</button>
+        </section>
+
+        <section class="dialogue-box" id="dialogueBox" hidden>
+            <strong id="dialogueName">Ren</strong>
+            <p id="dialogueText"></p>
+            <small>Pressione E para continuar</small>
+        </section>
+
+        <p class="instructions">
+            Use as setas do teclado ou botões para andar.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
