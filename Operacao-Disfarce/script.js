@@ -110,7 +110,7 @@ const objects = [
         x: 360,
         y: 275,
         name: "Bilhete escondido",
-        message: "Você encontrou um bilhete: 'Às vezes, as melhores aventuras começam por acaso.'"
+        message: "Você encontrou um bilhete: 'Às vezes, as melhores aventuras começam por acaso.'",
     }
 ];
 
@@ -179,6 +179,11 @@ function drawRen() {
 }
 
 function movePlayer() {
+    if (currentDialogue) {
+        player.moving = false;
+        return;
+    }
+
     let dx = 0;
     let dy = 0;
 
@@ -326,6 +331,7 @@ function gameLoop() {
     checkNearbyObjects();
 
     drawWorld();
+    drawObjects();
     drawRen();
     drawInteractionHint();
 
