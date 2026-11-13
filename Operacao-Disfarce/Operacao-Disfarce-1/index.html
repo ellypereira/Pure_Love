@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operação Disfarce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header>
+      <h1>💕 Operação Disfarce 💕</h1>
+      <p>Acho que alguém está vindo atrás de você...</p>
+    </header>
+
+    <section class="hud">
+      <span>❤️ <b id="score">0</b></span>
+      <span>💌 <b id="notes">0</b></span>
+      <span id="status">FUGA EM ANDAMENTO!</span>
+    </section>
+
+    <section class="game-screen">
+      <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <h2>A GRANDE FUGA</h2>
+        <p>Você só queria passear tranquilamente...</p>
+        <p>Mas Ren tinha outros planos! 👀</p>
+        <button id="startButton">COMEÇAR A FUGA!</button>
+      </div>
+
+      <div id="endScreen" class="overlay" hidden>
+        <h2 id="endTitle">Fim de jogo!</h2>
+        <p id="endMessage"></p>
+        <button id="restartButton">TENTAR NOVAMENTE</button>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="jumpButton">⬆ PULAR</button>
+      <button id="slideButton">⬇ DESLIZAR</button>
+    </section>
+
+    <p class="instructions">
+      Teclado: ESPAÇO ou ↑ para pular | ↓ para deslizar
+    </p>
+
+    <footer>Feito com carinho e algumas indiretas. 💗</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
