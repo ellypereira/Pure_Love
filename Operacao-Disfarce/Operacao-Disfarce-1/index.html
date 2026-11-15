@@ -19,16 +19,24 @@
       <span id="status">FUGA EM ANDAMENTO!</span>
     </section>
 
+    <section class="goal-panel" aria-label="Progresso da fuga">
+      <div class="goal-label">
+        <span>Objetivo: 100 pontos</span>
+        <strong id="progressText">0 / 100</strong>
+      </div>
+      <div class="progress-track">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+    </section>
+
     <section class="game-screen">
       <canvas id="gameCanvas" width="800" height="450"></canvas>
-
       <div id="startScreen" class="overlay">
         <h2>A GRANDE FUGA</h2>
         <p>Você só queria passear tranquilamente...</p>
         <p>Mas Ren tinha outros planos! 👀</p>
         <button id="startButton">COMEÇAR A FUGA!</button>
       </div>
-
       <div id="endScreen" class="overlay" hidden>
         <h2 id="endTitle">Fim de jogo!</h2>
         <p id="endMessage"></p>
@@ -44,10 +52,8 @@
     <p class="instructions">
       Teclado: ESPAÇO ou ↑ para pular | ↓ para deslizar
     </p>
-
     <footer>Feito com carinho e algumas indiretas. 💗</footer>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
